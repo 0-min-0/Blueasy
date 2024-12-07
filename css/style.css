@@ -1,0 +1,1307 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.mainSection {
+    width: 100%;
+    height: 85%;
+    display: grid;
+    justify-content: center;
+    background-image: url(../assets/images/Fondo.png);
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    height: 20%;
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    padding: 60px 40px 100px 40px;
+    background-color: #252f35c5;
+}
+
+.blue {
+    color: #4bcaff;
+}
+
+.tittle {
+    color: #fff;
+    font-family:'Open Sans', sans-serif;
+    display: flex;
+    grid-column: 1/2;
+    margin: 0 0 0 210px;
+}
+
+.navSection {
+    grid-column: 4/6;
+    margin: 0 30px 0 0;
+}
+
+.navSection ul li {
+    list-style: none;
+}
+
+.navSection ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    margin: 0 20px;
+}
+
+.navSection #color {
+    color: #4bcaff;
+    border: solid 3px #4bcaff;
+    padding: 4px 16px;
+}
+
+.headerText {
+    justify-items: center;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.headerText p {
+    font-size: 42px;
+    padding: 8px;
+    margin: 12px;
+    background-color: #39444ac5;
+}
+
+.itemsSection {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    padding: 130px 0 70px 0;
+    background-color: #4bcaff;
+    gap: 25px;
+}
+
+.item1 > h2, .item2 > h2, .item3 > h2, .item4 > h2 {
+    font-size: 23px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.item1 > p, .item2 > p, .item3 > p, .item4 > p {
+    font-size: 12px;
+}
+
+.item1 {
+    grid-area: 1/2;
+}
+
+.item2 {
+    grid-area: 1/3;
+}
+
+.item3 {
+    grid-area: 1/4;
+}
+
+.item4 {
+    grid-area: 1/5;
+}
+
+.portfolioSection {
+    display: grid;
+}
+
+.portfolioNav {
+    display: grid;
+    align-items: center;
+    padding: 50px 0;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 40px 0;
+}
+
+.portfolioTitle {
+    grid-area: 1/2;
+}
+
+.portfolioTitle > h2 {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.portfolioTitle hr {
+    color: black;
+    border:solid 0.2px black;
+    width: 45px;
+    margin: 5px 2px 0 2px;
+}
+
+.navPhotos {
+    grid-column: 4/6;
+    text-align: right;
+}
+
+.navPhotos ul li {
+    list-style: none;
+}
+
+.navPhotos a {
+    color: #313131;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 22px;
+}
+
+.navPhotos #color {
+    color: #4bcaff;
+    border: solid 3px #4bcaff;
+    padding: 4px 16px;
+}
+
+.photoItems {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 100px;
+    gap: 30px;
+}
+
+.photo1 {
+    grid-area: 1/2;
+    margin: 0;
+    padding: 0;
+}
+
+.photo2 {
+    grid-area: 1/3;
+}
+
+.photo3 {
+    grid-area: 1/4;
+}
+
+.photo4 {
+    grid-area: 1/5;
+}
+
+.photo5 {
+    grid-area: 2/2;
+}
+
+.photo6 {
+    grid-area: 2/3;
+}
+
+.photo7 {
+    grid-area: 2/4;
+}
+
+.photo8 {
+    grid-area: 2/5;
+}
+
+.defaultSection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    background-color: #515f67;
+}
+
+.textDefault {
+    color: #fff;
+    padding: 70px 0;
+    margin: 10px 0 10px 200px;
+}
+
+.textDefault h2 {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.textDefault hr, .twitterTitle hr, .whoTitle hr, .formTitle hr {
+    color: #fff;
+    border:solid 0.2px #fff;
+    width: 45px;
+    margin: 5px 2px 0 2px;
+}
+
+.textDefault p {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 30px 0;
+}
+
+.textDefault button {
+    color: #313131;
+    font-size: 16px;
+    padding: 12px 40px;
+    background-color: #515f67;
+    border: solid 3px #313131;
+    cursor: pointer;
+}
+
+.vimeo {
+    padding: 70px 0px;
+    margin: 10px 280px 10px 0;
+}
+
+.twitterSection {
+    color: #fff;
+    background-color: #4bcaff;
+    padding: 60px 0 50px 300px;
+}
+
+.twitterTitle h2 {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.twitterText p {
+    font-size: 29px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin: 30px 0;
+    line-height: 1.7;
+}
+
+.who {
+    width: 100%;
+    height: 53%;
+    background-image: url(../assets/images/bg_whoIs.png);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    color: #fff;
+}
+
+.subSectionWho {
+    margin: 0 0 0 250px;
+}
+
+.subSectionWho2 {
+    margin: 0 300px 0 0;
+}
+
+.whoTitle h2, .testimonials h2 {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.johnDoeText p {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 30px 0;
+    line-height: 1.8;
+}
+
+.whoText p {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 30px 0;
+    line-height: 1.8;
+}
+
+.mediaIcons img {
+    margin: 10px 20px 10px 0;
+}
+
+.testimonials {
+    padding: 60px 0 60px 280px;
+}
+
+.testimonials hr {
+    color: #000000;
+    border:solid 0.2px #000000;
+    width: 45px;
+    margin: 5px 2px 0 2px;
+}
+
+.testimonials p {
+    font-size: 29px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin: 30px 0 20px 0;
+    line-height: 1.7;
+}
+
+.testimonials .bluetext {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4bcaff;
+    margin: 0;
+}
+
+.forms {
+    width: 100%;
+    height: 90%;
+    background-image: url(../assets/images/bg_contact.png);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 10% 30% 30%;
+    justify-content: center;
+    align-content: center;
+    padding: 0 0 100px 0;
+}
+
+.form1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.formTitle h2{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.form1 {
+    color: #fff;
+}
+
+.form1 .form label {
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+.form1 .form input {
+    width: 80%;
+    background-color: #00000000;
+    border: solid 3px #fff;
+    padding: 18px;
+    margin: 5px 0 30px 0;
+    outline: none;
+}
+
+.formText p {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px 0 20px 0;
+}
+
+.form2 label {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+.form2 textarea {
+    width: 100%;
+    background-color: #00000000;
+    border: solid 3px #fff;
+    padding: 0 0 160px 0;
+    margin: 5px 0 0 0;
+    resize: none;
+    outline: none;
+}
+
+.form2 button {
+    color: #fff;
+    font-weight: 700;
+    background-color: #4bcaff;
+    border: none;
+    margin: 30px 0 0 0;
+    padding: 18px 150px;
+    cursor: pointer;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    color: #5d6a75;
+    background-color: #3f4b55;
+    padding: 80px;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+@media (max-width: 1279px) {
+    .mainSection {
+        width: 100%;
+        height: 70%;
+    }
+    
+    header {
+        padding: 30px 20px 50px 20px;
+    }
+    
+    .tittle {
+        margin: 0 0 0 100px;
+    }
+
+    .tittle h1 {
+        font-size: 18px;
+    }
+
+    .navSection {
+        margin: 0;
+    }
+  
+    .navSection ul li a {
+        font-size: 10px;
+        margin: 0 5px;
+    }
+    
+    .navSection #color {
+        border: solid 2px #4bcaff;
+        padding: 4px 16px;
+    }
+
+    .headerText p {
+        font-size: 22px;
+        padding: 4px;
+        margin: 8px;
+    }
+    
+    .itemsSection {
+        padding: 50px 0 35px 0;
+        gap: 12px;
+    }
+
+    .item2 > img, .item3 > img, .item4 > img {
+        width: 30px;
+    }
+
+    .item1 > img {
+        width: 23px;
+    }
+    
+    .item1 > h2, .item2 > h2, .item3 > h2, .item4 > h2 {
+        font-size: 13px;
+        font-weight: 500;
+        margin: 10px 0;
+    }
+
+    .item1 > p, .item2 > p, .item3 > p, .item4 > p {
+        font-size: 6px;
+    }
+    
+    .portfolioNav {
+        width: 100%;
+        padding: 20px 0;
+        margin: 20px 0;
+    }
+
+    .portfolioTitle > h2 {
+        font-size: 18px;
+    }
+    
+    .portfolioTitle hr {
+        border:solid 0.1px black;
+        width: 25px;
+    }
+
+    .portfolioTitle {
+        grid-area: 1/2;
+    }
+
+    .navPhotos {
+        grid-column: 4/7;
+        justify-items: start;
+    }
+    
+    .navPhotos a {
+        font-size: 8px;
+        margin: 10px;
+    }
+    
+    .navPhotos #color {
+        border: solid 2px #4bcaff;
+    }
+    
+    .photoItems {
+        margin-bottom: 40px;
+        gap: 10px;
+    }
+
+    .photoItems img {
+        width: 145px;
+    }
+
+    .defaultSection {
+        display: grid;
+    }
+    
+    .textDefault {
+        padding: 30px 0;
+        margin: 5px 0 5px 110px;
+    }
+    
+    .textDefault h2 {
+        font-size: 18px;
+    }
+    
+    .textDefault hr, .twitterTitle hr, .whoTitle hr, .formTitle hr {
+        border:solid 0.1px #fff;
+        width: 25px;
+    }
+    
+    .textDefault p {
+        font-size: 8px;
+        margin: 15px 0;
+    }
+    
+    .textDefault button {
+        font-size: 8px;
+        padding: 8px 25px;
+        border: solid 2px #313131;
+    }
+    
+    .vimeo {
+        padding: 40px 0px;
+        margin: 6px 150px 6px 0;
+    }
+
+    .vimeo img {
+        width: 300px;
+    }
+    
+    .twitterSection {
+        padding: 30px 0 25px 140px;
+    }
+    
+    .twitterTitle h2 {
+        font-size: 18px;
+    }
+    
+    .twitterText p {
+        font-size: 17px;
+        margin: 10px 0;
+        line-height: 1.5;
+    }
+    
+    .who {
+        background-position: 50%;
+    }
+
+    .subSectionWho {
+        margin: 0 0 0 125px;
+    }
+    
+    .subSectionWho2 {
+        margin: 30px 70px 0 0;
+    }
+    
+    .whoTitle h2, .testimonials h2 {
+        font-size: 18px;
+    }
+    
+    .johnDoeText p {
+        font-size: 8px;
+        margin: 15px 0;
+        line-height: 1.5;
+    }
+    
+    .whoText p {
+        font-size: 8px;
+        margin: 15px 0;
+        line-height: 1.5;
+    }
+    
+    .mediaIcons img {
+        width: 45px;
+        margin: 0px 10px 5px 0;
+    }
+
+    .testimonials {
+        padding: 30px 0 30px 140px;
+    }
+    
+    .testimonials hr {
+        border:solid 0.1px #000000;
+        width: 25px;
+    }
+    
+    .testimonials p {
+        font-size: 17px;
+        margin: 15px 0 10px 0;
+        line-height: 1.5;
+    }
+    
+    .testimonials .bluetext {
+        font-size: 10px;
+    }
+    
+    .forms {
+        height: 80%;
+        background-position: 50%;
+        padding: 0 0 50px 0;
+    }
+    
+    .formTitle h2 {
+        font-size: 18px;
+    }
+    
+    .form1 .form label {
+        font-size: 10px;
+    }
+    
+    .form1 .form input {
+        width: 80%;
+        border: solid 2px #fff;
+        padding: 7px;
+        margin: 3px 0 8px 0;
+    }
+    
+    .formText p {
+        font-size: 8px;
+        padding: 10px 0;
+    }
+    
+    .form2 label {
+        margin: 10px 0 0 0;
+        font-size: 10px;
+    }
+    
+    .form2 textarea {
+        width: 100%;
+        border: solid 2px #fff;
+        padding: 0 0 80px 0;
+        margin: 5px 0 0 0;
+    }
+    
+    .form2 button {
+        font-size: 8px;
+        margin: 15px 0 0 0;
+        padding: 10px 80px;
+    }
+    
+    footer {
+        padding: 40px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 920px) {
+    .mainSection {
+        width: 100%;
+        height: 65%;
+    }
+    
+    header {
+        padding: 30px 15px 45px 15px;
+    }
+    
+    .tittle {
+        margin: 0 0 0 90px;
+    }
+
+    .tittle h1 {
+        font-size: 16px;
+    }
+  
+    .navSection ul li a {
+        font-size: 7px;
+        margin: 0 4px;
+    }
+    
+    .navSection #color {
+        border: solid 2px #4bcaff;
+        padding: 3px 14px;
+    }
+
+    .headerText p {
+        font-size: 20px;
+        padding: 4px;
+        margin: 8px;
+    }
+    
+    .itemsSection {
+        padding: 40px 0 30px 0;
+        gap: 10px;
+    }
+
+    .item1 > img {
+        width: 22px;
+    }
+    
+    .item1 > h2, .item2 > h2, .item3 > h2, .item4 > h2 {
+        font-size: 11px;
+        margin: 7px 0;
+    }
+
+    .item1 > p, .item2 > p, .item3 > p, .item4 > p {
+        font-size: 5px;
+    }
+
+    .portfolioNav {
+        width: 100%;
+        padding: 20px 0;
+        margin: 10px 0;
+    }
+
+    .portfolioTitle > h2 {
+        font-size: 15px;
+    }
+    
+    .portfolioTitle hr {
+        border:solid 0.05px black;
+        width: 25px;
+    }
+    
+    .navPhotos a {
+        font-size: 7px;
+        margin: 6px;
+    }
+
+    .photoItems img {
+        width: 120px;
+    }
+    
+    .textDefault {
+        padding: 20px 0 10px 0;
+        margin: 5px 0 0 90px;
+    }
+    
+    .textDefault h2 {
+        font-size: 15px;
+    }
+
+    .textDefault p {
+        font-size: 7px;
+        margin: 12px 0;
+    }
+    
+    .textDefault button {
+        font-size: 7px;
+        padding: 6px 20px;
+    }
+    
+    .vimeo {
+        padding: 30px 0px;
+        margin: 6px 100px 6px 0;
+    }
+
+    .vimeo img {
+        width: 250px;
+    }
+
+    .twitterSection {
+        padding: 20px 0 20px 110px;
+    }
+    
+    .twitterTitle h2 {
+        font-size: 15px;
+    }
+    
+    .twitterText p {
+        font-size: 14px;
+        margin: 8px 0;
+        line-height: 1.2;
+    }
+    
+    .who {
+        height: 40%;
+        background-position: 50%;
+    }
+
+    .subSectionWho {
+        margin: 0 0 0 100px;
+    }
+    
+    .subSectionWho2 {
+        margin: 30px 70px 0 0;
+    }
+    
+    .whoTitle h2, .testimonials h2 {
+        font-size: 15px;
+    }
+    
+    .johnDoeText p {
+        font-size: 6.5px;
+        margin: 12px 0;
+        line-height: 1.5;
+    }
+    
+    .whoText p {
+        font-size: 6.5px;
+        margin: 10px 0;
+    }
+    
+    .mediaIcons img {
+        width: 35px;
+        margin: 0px 10px 5px 0;
+    }
+
+    .testimonials {
+        padding: 20px 0 20px 110px;
+    }
+    
+    .testimonials p {
+        font-size: 12px;
+        margin: 10px 0 8px 0;
+    }
+    
+    .testimonials .bluetext {
+        font-size: 8px;
+    }
+
+    .forms {
+        height: 70%;
+    }
+
+    .formTitle h2 {
+        font-size: 15px;
+    }
+    
+    .form1 .form label {
+        font-size: 8px;
+    }
+    
+    .form1 .form input {
+        width: 80%;
+        padding: 5px;
+        margin: 3px 0 5px 0;
+    }
+
+    .form2 textarea {
+        width: 100%;
+        border: solid 2px #fff;
+        padding: 0 0 60px 0;
+        margin: 5px 0 0 0;
+    }
+    
+    .form2 button {
+        font-size: 8px;
+        margin: 15px 0 0 0;
+        padding: 10px 80px;
+    }
+
+    footer {
+        padding: 30px;
+        font-size: 8px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+    .mainSection {
+        height: 55%;
+    }
+    
+    header {
+        padding: 25px 15px 40px 15px;
+    }
+
+    .tittle {
+        margin: 0 0 0 36px;
+    }
+
+    .tittle h1 {
+        font-size: 12px;
+    }
+    
+    .navSection {
+        grid-column: 3/6;
+        margin: 0 10px 0 0;
+    }
+    .navSection ul li a {
+        margin: 0 4px;
+    }
+    
+    .navSection #color {
+        border: solid 1px #4bcaff;
+        padding: 4px 13px;
+    }
+
+    .headerText p {
+        font-size: 16px;
+        padding: 6px;
+        margin: 8px;
+    }
+
+    .itemsSection {
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 30px;
+        gap: 12px;
+    }
+
+    .item1 {
+        grid-area: 1/1;
+    }
+
+    .item2 {
+        grid-area: 1/2;
+    }
+
+    .item3 {
+        grid-area: 2/1;
+    }
+
+    .item4 {
+        grid-area: 2/2;
+    }
+    
+    .item1 > h2, .item2 > h2, .item3 > h2, .item4 > h2 {
+        font-size: 13px;
+        margin: 6px 0;
+    }
+    
+    .item1 > p, .item2 > p, .item3 > p, .item4 > p {
+        font-size: 8px;
+    }
+    
+    .portfolioNav {
+        width: 100%;
+        padding: 20px 0;
+        margin: 10px 0;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .portfolioTitle {
+        grid-area: 1/1;
+        justify-items: end;
+    }
+
+    .navPhotos {
+        grid-column: 3/5;
+    }
+
+    .portfolioTitle > h2 {
+        font-size: 13px;
+    }
+    
+    .portfolioTitle hr {
+        border:solid 0.05px black;
+        width: 20px;
+    }
+    
+    .navPhotos a {
+        font-size: 6px;
+        margin: 3px;
+    }
+
+    .photoItems img {
+        width: 95px;
+    }
+
+    .defaultSection {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .textDefault {
+        padding: 25px 0 0 0;
+        margin: 5px 0;
+        grid-area: 1/1;
+    }
+    
+    .textDefault h2 {
+        font-size: 15px;
+    }
+
+    .textDefault p {
+        font-size: 9px;
+        margin: 12px 0;
+    }
+    
+    .textDefault button {
+        font-size: 7px;
+        padding: 6px 20px;
+    }
+    
+    .vimeo {
+        padding: 10px 0 30px 0;
+        margin: 6px 0;
+        grid-area: 2/1;
+    }
+
+    .vimeo img {
+        width: 300px;
+    }
+
+    .twitterSection {
+        padding: 20px 0 20px 30px;
+    }
+    
+    .twitterTitle h2 {
+        font-size: 13px;
+    }
+    
+    .twitterText p {
+        font-size: 11px;
+    }
+
+    .who {
+        height: 35%;
+        background-position: 50%;
+        gap: 8px;
+    }
+
+    .subSectionWho {
+        margin: 0 0 0 30px;
+    }
+    
+    .subSectionWho2 {
+        margin: 15px 20px 0 0;
+    }
+    
+    .johnDoeText p {
+        font-size: 6px;
+        margin: 10px 0;
+        line-height: 1.5;
+    }
+    
+    .whoText p {
+        font-size: 6px;
+        margin: 10px 0;
+    }
+    
+    .mediaIcons img {
+        width: 30px;
+        margin: 0px 10px 5px 0;
+    }
+
+    .testimonials {
+        padding: 20px 0 20px 30px;
+    }
+    
+    .testimonials p {
+        font-size: 11px;
+        margin: 10px 0 8px 0;
+    }
+    
+    .testimonials .bluetext {
+        font-size: 8px;
+    }
+
+    .forms {
+        height: 95%;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .form1 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, 1fr);
+        grid-area: 2/1;
+    }
+
+    .formTitle {
+        grid-area: 1/1;
+        align-content: center;
+    }
+
+    .form2 {
+        grid-area: 3/1;
+    }
+    
+    .form {
+        grid-area: 1/1;
+    }
+
+    .formText {
+        grid-area: 2/1;
+    }
+
+    .formText p {
+        font-size: 8px;
+        padding: 5px 0;
+    }
+
+    .form1 .form input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainSection {
+        height: 45%;
+    }
+    
+    header {
+        padding: 20px 10px 35px 10px;
+    }
+
+    .tittle {
+        margin: 0;
+    }
+
+    .tittle h1 {
+        font-size: 0;
+    }
+    
+    .navSection {
+        grid-column: 1/6;
+    }
+
+    .navSection ul li a {
+        font-size: 10px;
+        margin: 0 5px;
+    }
+
+    .headerText p {
+        font-size: 12px;
+        padding: 6px;
+        margin: 8px;
+    }
+
+    .itemsSection {
+        justify-content: center;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, 1fr);
+        padding: 30px;
+        gap: 12px;
+    }
+
+    .item1 {
+        grid-area: 1/1;
+    }
+
+    .item2 {
+        grid-area: 2/1;
+    }
+
+    .item3 {
+        grid-area: 3/1;
+    }
+
+    .item4 {
+        grid-area: 4/1;
+    }
+    
+    .item1 > h2, .item2 > h2, .item3 > h2, .item4 > h2 {
+        font-size: 14px;
+        margin: 6px 0;
+    }
+    
+    .item1 > p, .item2 > p, .item3 > p, .item4 > p {
+        font-size: 10px;
+    }
+    
+    .portfolioNav {
+        width: 100%;
+        padding:0;
+        margin: 0;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .portfolioTitle {
+        grid-area: 1/1;
+        justify-items: start;
+        padding: 20px 0 0 20px;
+    }
+
+    .navPhotos {
+        grid-column: 2/1;
+        padding: 10px 20px;
+    }
+
+    .portfolioTitle > h2 {
+        font-size: 13px;
+    }
+    
+    .portfolioTitle hr {
+        border:solid 0.05px black;
+        width: 20px;
+    }
+    
+    .navPhotos a {
+        font-size: 8px;
+        margin: 3px;
+    }
+
+    .photoItems {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        justify-items: center;
+        padding: 20px;
+    }
+
+    .photo1 {
+        grid-area: 1/1;
+    }
+
+    .photo2 {
+        grid-area: 1/2;
+    }
+
+    .photo3 {
+        grid-area: 2/1;
+    }
+
+    .photo4 {
+        grid-area: 2/2;
+    }
+    
+    .photo5 {
+        grid-area: 3/1;
+    }
+
+    .photo6 {
+        grid-area: 3/2;
+    }
+
+    .photo7 {
+        grid-area: 4/1;
+    }
+
+    .photo8 {
+        grid-area: 4/2;
+    }
+
+    .photoItems img {
+        width: 150px;
+    }
+
+    .defaultSection {
+       padding: 0 30px;
+    }
+    
+    .mediaIcons img {
+        width: 25px;
+        margin: 0px 5px 5px 0;
+    }
+
+    .testimonials {
+        padding: 20px;
+    }
+    
+    .testimonials p {
+        font-size: 10px;
+    }
+
+    .forms {
+        height: 85%;
+        padding: 0 30px;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .form2 button {
+        margin: 20px 0;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 6px;
+    }
+}
